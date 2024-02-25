@@ -64,7 +64,7 @@
                 <span class="label-medium">Search</span>
             </button>
         </div>
-        <div class="container">
+        <div class="player-container">
             <div class="wrapper">
                 <div class="top-bar">
                     <i class="material-symbols-rounded">expand_more</i>
@@ -72,20 +72,20 @@
                     <i class="material-symbols-rounded">more_horiz</i>
                 </div>
                 <div class="img-area">
-                    <img src="#" alt="">
+                    <img src="./assets/images/music1.png" alt="">
                 </div>
                 <div class="song-details">
-                    <p class="name">Too Many Sins - Metro Jaya</p>
-                    <p class="artist">Metro Jaya</p>
+                    <p class="name label-medium">Too Many Sins - Metro Jaya</p>
+                    <p class="artist label-small">Metro Jaya</p>
                 </div>
                 <div class="progress-area">
                     <div class="progress-bar">
                         <span></span>
                     </div>
-                    <div class="timer">
-                        <span class="current">0:20</span>
-                        <span class="current">3:40</span>
-                    </div>
+                </div>
+                <div class="timer">
+                    <span class="current">0:20</span>
+                    <span class="current">3:40</span>
                 </div>
                 <div class="controls">
                     <i id="repeat-plist" class="material-symbols-rounded">repeat</i>
@@ -93,9 +93,27 @@
                     <div class="play-pause">
                         <i class="material-symbols-rounded">play_arrow</i>
                     </div>
-                    <i id="repeat-plist" class="material-symbols-rounded">repeat</i>
-                    <i id="repeat-plist" class="material-symbols-rounded">repeat</i>
+                    <i id="repeat-plist" class="material-symbols-rounded">skip_next</i>
+                    <i id="repeat-plist" class="material-symbols-rounded">queue_music</i>
                 </div>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i id="close" class="material-symbols-rounded">queue_music</i>
+                        <span>Music list</span>
+                    </div>
+                    <i id="close label-medium" class="material-symbols-rounded">close</i>
+                </div>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <span>Music 1</span>
+                            <p>Audio Library</p>
+                        </div>
+                        <span class="audio-duration">3:19</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
