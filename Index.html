@@ -26,7 +26,7 @@
     <!--
         Scripts
     -->
-
+    <script src="./assets/scripts/music-list.js" defer></script>
     <script src="./assets/scripts/main.js" defer></script>
 
 </head>
@@ -72,15 +72,15 @@
                     <i class="material-symbols-rounded">more_horiz</i>
                 </div>
                 <div class="img-area">
-                    <img src="./assets/images/music1.png" alt="">
+                    <img src="" alt="">
                 </div>
                 <div class="song-details">
-                    <p class="name label-medium">Too Many Sins - Metro Jaya</p>
-                    <p class="artist label-small">Metro Jaya</p>
+                    <p class="name label-medium"></p>
+                    <p class="artist label-small"></p>
                 </div>
                 <div class="progress-area">
                     <div class="progress-bar">
-                        <span></span>
+                        <audio id="music-audio" src=""></audio>
                     </div>
                 </div>
                 <div class="timer">
@@ -89,29 +89,46 @@
                 </div>
                 <div class="controls">
                     <i id="repeat-plist" class="material-symbols-rounded">repeat</i>
-                    <i id="repeat-plist" class="material-symbols-rounded">skip_previous</i>
+                    <i id="prev" class="material-symbols-rounded">skip_previous</i>
                     <div class="play-pause">
                         <i class="material-symbols-rounded">play_arrow</i>
                     </div>
-                    <i id="repeat-plist" class="material-symbols-rounded">skip_next</i>
-                    <i id="repeat-plist" class="material-symbols-rounded">queue_music</i>
+                    <i id="next" class="material-symbols-rounded">skip_next</i>
+                    <i id="more-music" class="material-symbols-rounded">queue_music</i>
                 </div>
             </div>
             <div class="music-list">
                 <div class="header">
-                    <div class="row">
-                        <i id="close" class="material-symbols-rounded">queue_music</i>
-                        <span>Music list</span>
-                    </div>
-                    <i id="close label-medium" class="material-symbols-rounded">close</i>
+                    <i id="close" class="material-symbols-rounded">queue_music</i>
+                    <span class="label-medium">Music list</span>
                 </div>
                 <ul>
                     <li>
                         <div class="row">
-                            <span>Music 1</span>
-                            <p>Audio Library</p>
+                            <div class="music-details">
+                                <span>Music 1</span>
+                                <p>Audio Library</p>
+                            </div>
+                            <span class="audio-duration">3:19</span>
                         </div>
-                        <span class="audio-duration">3:19</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="music-details">
+                                <span>Music 2</span>
+                                <p>Audio Library</p>
+                            </div>
+                            <span class="audio-duration">4:30</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="music-details">
+                                <span>Music 3</span>
+                                <p>Audio Library</p>
+                            </div>
+                            <span class="audio-duration">2:30</span>
+                        </div>
                     </li>
                 </ul>
             </div>

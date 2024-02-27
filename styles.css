@@ -16,13 +16,13 @@
     --primary-60: #459F54;
     --primary-50: #3B8C48;
     --primary-40: #31753C;
-    --secondary-100: #5FEA75;
-    --secondary-90: #5ADA6F;
-    --secondary-80: #55C968;
-    --secondary-70: #4CB35C;
-    --secondary-60: #459F54;
-    --secondary-50: #3B8C48;
-    --secondary-40: #31753C;
+    --secondary-100: #8246E3;
+    --secondary-90: #7A43D3;
+    --secondary-80: #6E3DC0;
+    --secondary-70: #6236AA;
+    --secondary-60: #562F95;
+    --secondary-50: #4A2980;
+    --secondary-40: #3C2168;
     --alternate-100:#4569e0;
     --alternate-80:#3752aa;
     --alternate-90:#4060ca;
@@ -293,8 +293,13 @@ body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 4px;
+    padding: 4px;
     margin: 0;
-    background-color: var(--primary-50);
+    background: linear-gradient(45deg, var(--neutral-80) -50%, var(--secondary-60) 100%);
     
 }
 
@@ -393,7 +398,7 @@ body {
     cursor: pointer;
 }
 
-.progress-area .progress-bar {
+.progress-bar {
     height: inherit;
     width: 50%;
     position: relative;
@@ -479,3 +484,21 @@ body {
     border-radius: var(--radius-small);
     overflow: hidden;
 }
+
+.row {
+    display: flex;
+    max-width: 100%;
+    max-height: max-content;
+    gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 4px;
+    border-radius: var(--radius-small);
+    transition: var(--transition-duration-quick), var(--transition-duration-smooth);
+}
+
+.row:hover {
+    background: var(--secondary-40);
+}
+
